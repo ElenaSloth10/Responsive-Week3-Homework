@@ -1,0 +1,70 @@
+:root {
+  --link-color: #6c63ff;
+  --main-size: 50px;
+  --p-color: #f5f2fe;
+  --h3-color: #4c4c4c;
+  --bg-color: #f5f2fe;
+}
+
+.box {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.aCont,
+.aCont:hover,
+.aCont:visited {
+  color: var(--link-color);
+  font-size: calc(var(--main-size) - 20px);
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: calc(var(--main-size) + 50px);
+}
+
+h3 {
+  margin: 0;
+  font-size: calc(var(--main-size) - 25px);
+  color: var(--h3-color);
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin: 0;
+  font-size: calc(var(--main-size) + 20px);
+  margin-top: 50px;
+}
+
+.colorBG {
+  background-color: var(--bg-color);
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 780px) {
+  h1 {
+    font-size: calc(var(--main-size) + 10px);
+  }
+
+  h3 {
+    font-size: calc(var(--main-size) - 35px);
+  }
+
+  h2 {
+    font-size: calc(var(--main-size) - 10px);
+  }
+  .aCont,
+  .aCont:hover,
+  .aCont:visited {
+    font-size: calc(var(--main-size) - 30px);
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: calc(var(--main-size) - 10px);
+  }
+}
